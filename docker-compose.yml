@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  flask-catdog:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=app.py
+      - FLASK_RUN_HOST=0.0.0.0
+    volumes:
+      - .:/app
+    networks:
+      - flask-net
+
+networks:
+  flask-net:
+    driver: bridge
