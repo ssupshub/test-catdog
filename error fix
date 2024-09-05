@@ -1,4 +1,4 @@
-docker system prune -a (space not left in docker)
+docker system prune -a (if you get space not left in docker error)
 
 docker-compose up --build
 
