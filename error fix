@@ -1,3 +1,4 @@
 docker system prune -a (space not left in docker)
 
 docker-compose up --build
+
